@@ -41,7 +41,8 @@ Every time a change is pushed to the `main` branch.
 
 ## Docker Image
 
-The generated image is available at:
+The Docker image is available on Docker Hub:
+
 vinimb/app:latest
 
 ### Pull the image:
@@ -80,6 +81,13 @@ Docker Hub credentials are securely stored using GitHub Secrets, preventing sens
     .github/workflows/docker.yml
    ````
 It runs automatically on every push to the main branch.
+
+This project uses GitHub Actions to:
+
+- Build the Docker image
+- Push the image to Docker Hub
+
+The pipeline was iteratively refined based on troubleshooting and optimization steps, ensuring a stable and reproducible build process aligned with real-world CI/CD practices.
 
 ---
 
